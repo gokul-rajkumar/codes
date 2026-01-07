@@ -1,0 +1,12 @@
+char_array = ['A', 'b', '3', '$', ' ', 'Z', '9', '!']
+upper, lower, digits, special = 0, 0, 0, 0
+for char in char_array:
+    if char.isupper():
+        upper += 1
+    elif char.islower():
+        lower += 1
+    elif char.isdigit():
+        digits += 1
+    else:
+        special += 1
+print(f"Uppercase: {upper}, Lowercase: {lower}, Digits: {digits}, Special: {special}")
